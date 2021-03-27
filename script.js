@@ -46,7 +46,8 @@ async function renderNewQuote() {
         quoteDisplayElement.appendChild(characterSpan)
     })
     quoteInputElement.value = null
-    startTimer();
+    document.addEventListener('keypress',startTimer());
+//     startTimer();
 }
 
 let startTime;
